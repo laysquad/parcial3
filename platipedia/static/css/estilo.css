@@ -36,6 +36,10 @@ body {
     width: 100%;
 }
 
+.PrincipalThumb canvas {
+    width: 100%;
+}
+
 .PrincipalThumb .Boton {
     float: right;
     background: #8BA753;

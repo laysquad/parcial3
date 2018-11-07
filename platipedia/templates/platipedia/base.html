@@ -14,6 +14,7 @@
     <link rel="shortcut icon" type="image/png" href="static/favicon.ico" />
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bpgdec.js' %}"></script>
     <meta charset="utf8" />
 </head>
 
@@ -139,19 +140,19 @@
 
         <div class="Sector">
             <div class="Titular">
-                <h3>LOS MAS VISTOS</h3>
+                <h3>PLATILLOS</h3>
             </div>
 
             <div class="Subtitular">Estos son los platillos preferidos por nuestros usuarios</div>
         </div>
         <div class="container-fluid Seccion">
             <div class="row">
-                {% for a in ListaPlatillos %}
+                {% for Elemento in ListaPlatillos %}
                 <div class="col-md-4 PrincipalThumb">
-                    <img src="static/arte/platillos/{{ a.id }}.jpg" onerror="this.src='static/arte/noimagen.jpg'">
+                    <img src="static/arte/platillos/{{ Elemento.id }}.bpg">
                     <div class="Boton"><a>Leer Más</a></div>
-                    <h4 class="h4">{{ a.nombre }}</h4>
-                    <div class="Por">Por: {{ a.autor }}</div>
+                    <h4 class="h4">{{ Elemento.nombre }}</h4>
+                    <div class="Por">Por: {{ Elemento.autor }}</div>
                 </div>
                 {% endfor %}
             </div>
@@ -159,41 +160,19 @@
 
         <div class="Sector">
             <div class="Titular">
-                <h3>RECOMENDADOS</h3>
+                <h3>INGREDIENTES</h3>
             </div>
-            <div class="Subtitular">Esta es la selección recomendada por Platipedia.com</div>
+            <div class="Subtitular">Platipedia te presenta los ingredientes usados en todos nuestros deliciosos platillos</div>
             <div class="container-fluid Seccion">
                 <div class="row">
+                    {% for Elemento in ListaIngredientes %}
                     <div class="col-md-4 PrincipalThumb">
-                        <img src="static/arte/platillos/1.jpg">
+                        <img src="static/arte/ingredientes/{{ Elemento.id }}.bpg">
                         <div class="Boton"><a>Leer Más</a></div>
-                        <h4 class="h4">Burrito Méxicano</h4>
-                        <div class="Por">Por: Platipedia.com</div>
+                        <h4 class="h4">{{ Elemento.nombre }}</h4>
+                        <div class="Por">Por: {{ Elemento.autor }}</div>
                     </div>
-                    <div class="col-md-4 PrincipalThumb">
-                        <img src="static/arte/platillos/1.jpg">
-                        <div class="Boton"><a>Leer Más</a></div>
-                        <h4 class="h4">Burrito Méxicano</h4>
-                        <div class="Por">Por: Platipedia.com</div>
-                    </div>
-                    <div class="col-md-4 PrincipalThumb">
-                        <img src="static/arte/platillos/1.jpg">
-                        <div class="Boton"><a>Leer Más</a></div>
-                        <h4 class="h4">Burrito Méxicano</h4>
-                        <div class="Por">Por: Platipedia.com</div>
-                    </div>
-                    <div class="col-md-4 PrincipalThumb">
-                        <img src="static/arte/platillos/1.jpg">
-                        <div class="Boton"><a>Leer Más</a></div>
-                        <h4 class="h4">Burrito Méxicano</h4>
-                        <div class="Por">Por: Platipedia.com</div>
-                    </div>
-                    <div class="col-md-4 PrincipalThumb">
-                        <img src="static/arte/platillos/1.jpg">
-                        <div class="Boton"><a>Leer Más</a></div>
-                        <h4 class="h4">Burrito Méxicano</h4>
-                        <div class="Por">Por: Platipedia.com</div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
