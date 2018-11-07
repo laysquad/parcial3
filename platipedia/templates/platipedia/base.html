@@ -146,36 +146,14 @@
         </div>
         <div class="container-fluid Seccion">
             <div class="row">
+                {% for a in ListaPlatillos %}
                 <div class="col-md-4 PrincipalThumb">
-                    <img src="static/arte/platillos/1.jpg">
+                    <img src="static/arte/platillos/{{ a.id }}.jpg" onerror="this.src='static/arte/noimagen.jpg'">
                     <div class="Boton"><a>Leer Más</a></div>
-                    <h4 class="h4">Burrito Méxicano</h4>
-                    <div class="Por">Por: Platipedia.com</div>
+                    <h4 class="h4">{{ a.nombre }}</h4>
+                    <div class="Por">Por: {{ a.autor }} </div>
                 </div>
-                <div class="col-md-4 PrincipalThumb">
-                    <img src="static/arte/platillos/1.jpg">
-                    <div class="Boton"><a>Leer Más</a></div>
-                    <h4 class="h4">Burrito Méxicano</h4>
-                    <div class="Por">Por: Platipedia.com</div>
-                </div>
-                <div class="col-md-4 PrincipalThumb">
-                    <img src="static/arte/platillos/1.jpg">
-                    <div class="Boton"><a>Leer Más</a></div>
-                    <h4 class="h4">Burrito Méxicano</h4>
-                    <div class="Por">Por: Platipedia.com</div>
-                </div>
-                <div class="col-md-4 PrincipalThumb">
-                    <img src="static/arte/platillos/1.jpg">
-                    <div class="Boton"><a>Leer Más</a></div>
-                    <h4 class="h4">Burrito Méxicano</h4>
-                    <div class="Por">Por: Platipedia.com</div>
-                </div>
-                <div class="col-md-4 PrincipalThumb">
-                    <img src="static/arte/platillos/1.jpg">
-                    <div class="Boton"><a>Leer Más</a></div>
-                    <h4 class="h4">Burrito Méxicano</h4>
-                    <div class="Por">Por: Platipedia.com</div>
-                </div>
+                {% endfor %}
             </div>
         </div>
 

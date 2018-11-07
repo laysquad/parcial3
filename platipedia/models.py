@@ -17,6 +17,7 @@ class Usuario(models.Model):
 class Ingrediente(models.Model):
     nombre = models.CharField(max_length=50)
     contenido = models.TextField()
+    autor = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     creado = models.DateTimeField(
             default=timezone.now)
     publicado = models.DateTimeField(
@@ -32,6 +33,7 @@ class Ingrediente(models.Model):
 class Platillo(models.Model):
     nombre = models.CharField(max_length=50)
     contenido = models.TextField()
+    autor = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     creado = models.DateTimeField(
             default=timezone.now)
     publicado = models.DateTimeField(
