@@ -7,8 +7,12 @@
         <img class="imagen" src="../../static/arte/platillos/{{ Platillo.id }}.bpg">
         <hr>
         <p>{{ Platillo.contenido }}</p>
-        <hr> {% for Elemento in Ingredientes %}
-        <a href="../../ingredientedetalle/{{ Elemento.id }}">{{ Elemento.nombre }}</a> {% endfor %}
+        <hr>
+        <h5>Ingredientes</h5>
+
+        {% for Elemento in Ingredientes %}
+        <ol><a href="../../ingredientedetalle/{{ Elemento.id }}">{{ Elemento.nombre }}</a> </ol>{% endfor %}
+
     </div>
 
 </div>
