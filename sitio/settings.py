@@ -25,7 +25,7 @@ SECRET_KEY = '859ncnm_gg*#p%6*&pvyf41i16l@v1^kh5dq82w2$kgpq%5-uw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ALLOWED_HOSTS = ['127.0.0.1', 'parcial3.pythonanywhere.com']
+ALLOWED_HOSTS = ALLOWED_HOSTS = ['127.0.0.1', 'platipedia.pythonanywhere.com']
 
 
 # Application definition
