@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "vparcial3\\Scripts\\python.exe"
+    "python.pythonPath": "vparcial3\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": false
 }

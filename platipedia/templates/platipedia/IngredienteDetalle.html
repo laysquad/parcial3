@@ -1,0 +1,14 @@
+{% extends 'platipedia/base.html' %} {% block content %}
+
+<div class="SujetadorPagina">
+    <div class="pagina">
+        <h1>{{ Ingrediente.nombre }}</h1>
+        <h4>Publicado: {{ Ingrediente.publicado }}</h4>
+        <img class="imagen" src="../../static/arte/ingredientes/{{ Ingrediente.id }}.bpg">
+        <hr>
+        <p>{{ Ingrediente.contenido }}</p>
+    </div>
+
+</div>
+
+{% endblock %}

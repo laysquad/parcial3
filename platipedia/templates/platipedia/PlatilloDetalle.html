@@ -1,0 +1,16 @@
+{% extends 'platipedia/base.html' %} {% block content %}
+
+<div class="SujetadorPagina">
+    <div class="pagina">
+        <h1>{{ Platillo.nombre }}</h1>
+        <h4>Publicado: {{ Platillo.publicado }}</h4>
+        <img class="imagen" src="../../static/arte/platillos/{{ Platillo.id }}.bpg">
+        <hr>
+        <p>{{ Platillo.contenido }}</p>
+        <hr> {% for Elemento in Ingredientes %}
+        <a href="../../ingredientedetalle/{{ Elemento.id }}">{{ Elemento.nombre }}</a> {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}
