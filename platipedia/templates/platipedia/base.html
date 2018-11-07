@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Platipedia</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="static/favicon.ico" />
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <meta charset="utf8" />
+</head>
+
+<body>
+    <div class="SSuperior">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img alt="Brand" class="Logo" src="static/arte/logomini.png"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="#">Página principal</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+
+
+    <div class="SujetadorBase">
+        <!--Página principal-->
+
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+
+                    <div class="fill" style="background-image:url('static/arte/plato0.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated fadeInLeft"><img class="carousel-topper" src="static/arte/Platipedialogo.png"></h2>
+                        <p class="animated fadeInUp">Las mejores recetas e información sobre tus platillos preferidos en un solo lugar</p>
+                        <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Ver
+                                Más</a></p>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="fill" style="background-image:url('static/arte/plato1.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated fadeInLeft">Los mejores platillos</h2>
+                        <p class="animated fadeInUp">Encuentra gran variedad de platillos que puedes cocinar en tu hogar
+                        </p>
+                        <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Ver
+                                Más</a></p>
+                    </div>
+                </div>
+                <div class="item">
+
+                    <div class="fill" style="background-image:url('static/arte/plato2.jpg');"></div>
+                    <div class="carousel-caption">
+
+                        <h2 class="animated fadeInDown">Aprende sobre tus alimentos</h2>
+                        <p class="animated fadeInUp">Encuentra información sobre tus alimentos preferidos, encuentra sus origenes y datos interesantes.</p>
+                        <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Ver
+                                Más</a></p>
+                    </div>
+                </div>
+                <div class="item">
+
+                    <div class="fill" style="background-image:url('static/arte/plato3.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated fadeInRight">Platillos saludables</h2>
+                        <p class="animated fadeInRight">Encuentra las combinaciones mas saludables para preparar</p>
+                        <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large">Ver
+                                Más</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+
+        <div class="Sector">
+            <div class="Titular">
+                <h3>LOS MAS VISTOS</h3>
+            </div>
+
+            <div class="Subtitular">Estos son los platillos preferidos por nuestros usuarios</div>
+        </div>
+        <div class="container-fluid Seccion">
+            <div class="row">
+                <div class="col-md-4 PrincipalThumb">
+                    <img src="static/arte/platillos/1.jpg">
+                    <div class="Boton"><a>Leer Más</a></div>
+                    <h4 class="h4">Burrito Méxicano</h4>
+                    <div class="Por">Por: Platipedia.com</div>
+                </div>
+                <div class="col-md-4 PrincipalThumb">
+                    <img src="static/arte/platillos/1.jpg">
+                    <div class="Boton"><a>Leer Más</a></div>
+                    <h4 class="h4">Burrito Méxicano</h4>
+                    <div class="Por">Por: Platipedia.com</div>
+                </div>
+                <div class="col-md-4 PrincipalThumb">
+                    <img src="static/arte/platillos/1.jpg">
+                    <div class="Boton"><a>Leer Más</a></div>
+                    <h4 class="h4">Burrito Méxicano</h4>
+                    <div class="Por">Por: Platipedia.com</div>
+                </div>
+                <div class="col-md-4 PrincipalThumb">
+                    <img src="static/arte/platillos/1.jpg">
+                    <div class="Boton"><a>Leer Más</a></div>
+                    <h4 class="h4">Burrito Méxicano</h4>
+                    <div class="Por">Por: Platipedia.com</div>
+                </div>
+                <div class="col-md-4 PrincipalThumb">
+                    <img src="static/arte/platillos/1.jpg">
+                    <div class="Boton"><a>Leer Más</a></div>
+                    <h4 class="h4">Burrito Méxicano</h4>
+                    <div class="Por">Por: Platipedia.com</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Sector">
+            <div class="Titular">
+                <h3>RECOMENDADOS</h3>
+            </div>
+            <div class="Subtitular">Esta es la selección recomendada por Platipedia.com</div>
+            <div class="container-fluid Seccion">
+                <div class="row">
+                    <div class="col-md-4 PrincipalThumb">
+                        <img src="static/arte/platillos/1.jpg">
+                        <div class="Boton"><a>Leer Más</a></div>
+                        <h4 class="h4">Burrito Méxicano</h4>
+                        <div class="Por">Por: Platipedia.com</div>
+                    </div>
+                    <div class="col-md-4 PrincipalThumb">
+                        <img src="static/arte/platillos/1.jpg">
+                        <div class="Boton"><a>Leer Más</a></div>
+                        <h4 class="h4">Burrito Méxicano</h4>
+                        <div class="Por">Por: Platipedia.com</div>
+                    </div>
+                    <div class="col-md-4 PrincipalThumb">
+                        <img src="static/arte/platillos/1.jpg">
+                        <div class="Boton"><a>Leer Más</a></div>
+                        <h4 class="h4">Burrito Méxicano</h4>
+                        <div class="Por">Por: Platipedia.com</div>
+                    </div>
+                    <div class="col-md-4 PrincipalThumb">
+                        <img src="static/arte/platillos/1.jpg">
+                        <div class="Boton"><a>Leer Más</a></div>
+                        <h4 class="h4">Burrito Méxicano</h4>
+                        <div class="Por">Por: Platipedia.com</div>
+                    </div>
+                    <div class="col-md-4 PrincipalThumb">
+                        <img src="static/arte/platillos/1.jpg">
+                        <div class="Boton"><a>Leer Más</a></div>
+                        <h4 class="h4">Burrito Méxicano</h4>
+                        <div class="Por">Por: Platipedia.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Página principal-->
+    </div>
+
+
+    <!--Footer-->
+    <div class="Footer">
+        Todos los derechos reservados Juan Miguel Mendoza López 2018<br> Universidad Mesoamericana Quetzaltenango, Guatemala<br> 201408101
+    </div>
+</body>
+
+
+</html>
